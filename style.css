@@ -1,3 +1,43 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+div, h1 {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   max-width: 100%;
+}
+
+#lunchGameWrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: none;
+}
+
+#webframe {
+  position: absolute;
+  border: 1px solid red;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#webframeBackButton {
+  border: 2px solid lightgray;
+  background-color: gray;
+  height: 40px;
+  width: 40px;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  z-index: 1;
 }
