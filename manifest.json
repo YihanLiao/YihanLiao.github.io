@@ -1,7 +1,7 @@
 {
   "name": "YIHANPWA",
   "short_name": "YHL",
-  "start_url": "https://yihanliao.github.io/",
+  "start_url": "https://yihanliao.github.io/index.html?mode=standalone",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#2196f3",

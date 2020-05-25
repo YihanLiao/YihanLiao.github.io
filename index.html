@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="apple-touch-icon" href="/images/appicon/app_icon.png">
-  <meta name="apple-mobile-web-app-status-bar" content="#000000">
-  <title>Pwa Project</title>
-</head>
-<body>
-  <h1>PWA Project TEST</h1>
-  <div>
-    <button>
-      <a href="https://www.google.com/" target="_blank">Google</a>
-    </button>
-    <button>
-      <span onclick="location.href = 'https://www.google.com/'">Google</span>
-    </button>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/images/appicon/app_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="apple-mobile-web-app-status-bar" content="#000000">
+    <title>Pwa Project</title>
+  </head>
+  <body>
+    <h1>PWA Project TEST</h1>
     <div>
-      <img src="/images/uf6ej9452l.jpg" alt="奇怪的知識增加了">
+      <h1 id="pwadetect"></h1>
+      <button>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+      </button>
+      <button>
+        <span onclick="location.href = 'https://www.google.com/'">Google</span>
+      </button>
+      <div>
+        <img src="/images/uf6ej9452l.jpg" alt="奇怪的知識增加了">
+      </div>
     </div>
-  </div>
-</body>
+    <script src="/javascripts/main.js"></script>
+    <script>
+      window.addEventListener('load', async () => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/javascripts/service-worker.js')
+          .then(function(registration) {
+            registration.update();
+          }).catch(function(error) {
+            console.error('Registration failed with ' + error);
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
