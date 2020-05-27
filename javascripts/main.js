@@ -1,5 +1,5 @@
 let pwadetectDOM = document.getElementById('pwadetect');
-document.getElementById('jstext').innerHTML = '我要測試安裝功能 v3';
+document.getElementById('jstext').innerHTML = '我要測試安裝功能 v4';
 let deferredPrompt;
 if (window.matchMedia('(display-mode: standalone)').matches) {
   console.log("This is running as standalone.");
@@ -13,15 +13,16 @@ if (window.matchMedia('(display-mode: standalone)').matches) {
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent the mini-infobar from appearing on mobile
   e.preventDefault();
+  console.info('beforeinstallprompt!!');
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
   // Update UI notify the user they can install the PWA
-  document.getElementById('promotionInfo').display = 'block';
+  document.getElementById('promotionInfo').style.display = 'block';
 });
 
 document.getElementById('promotionInfo').addEventListener('click', (e) => {
   // Hide the app provided install promotion
-  document.getElementById('promotionInfo').display = 'none';
+  document.getElementById('promotionInfo').style.display = 'none';
   // Show the install prompt
   deferredPrompt.prompt();
   // Wait for the user to respond to the prompt
