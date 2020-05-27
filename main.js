@@ -1,5 +1,5 @@
 let pwadetectDOM = document.getElementById('pwadetect');
-document.getElementById('jstext').innerHTML = '我要測試安裝功能 v4';
+document.getElementById('jstext').innerHTML = '我要測試安裝功能 v5';
 let deferredPrompt;
 if (window.matchMedia('(display-mode: standalone)').matches) {
   console.log("This is running as standalone.");

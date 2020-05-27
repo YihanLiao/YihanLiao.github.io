@@ -12,7 +12,7 @@
   </head>
   <body>
     <h1>PWA Project TEST</h1>
-    <h2>我要測試安裝功能 v4</h2>
+    <h2>我要測試安裝功能 v5</h2>
     <h2 id="jstext"></h2>
     <div>
       <h1 id="pwadetect"></h1>
@@ -42,11 +42,11 @@
     <script>
       var vConsole = new VConsole();
     </script>
-    <script src="/javascripts/main.js"></script>
+    <script src="/main.js"></script>
     <script>
       window.addEventListener('load', async () => {
         if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/javascripts/service-worker.js')
+          navigator.serviceWorker.register('/service-worker.js')
           .then(function(registration) {
             registration.update();
           }).catch(function(error) {
