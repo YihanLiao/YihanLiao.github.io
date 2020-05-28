@@ -1,5 +1,5 @@
 let pwadetectDOM = document.getElementById('pwadetect');
-document.getElementById('jstext').innerHTML = '我要測試彈窗功能 v1';
+document.getElementById('jstext').innerHTML = '我要測試彈窗功能 v1-1';
 let deferredPrompt;
 if (window.matchMedia('(display-mode: standalone)').matches) {
   console.log("This is running as standalone.");
@@ -17,7 +17,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
   // Update UI notify the user they can install the PWA
-  // document.getElementById('promotionInfo').style.display = 'block';
+  document.getElementById('promotionInfo').style.display = 'block';
 });
 
 document.getElementById('promotionInfo').addEventListener('click', (e) => {
