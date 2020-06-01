@@ -9,6 +9,11 @@ div, h1 {
   padding: 0;
 }
 
+button {
+  display: block;
+  margin: 10px;
+}
+
 img {
   max-width: 100%;
 }
@@ -20,13 +25,31 @@ img {
   display: none;
 }
 
+#confirmDialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -75px;
+  margin-left: -100px;
+  text-align: center;
+  height: 150px;
+  width: 200px;
+  background-color: white;
+  display: none;
+}
+#confirmDialog button {
+  display: inline-block;
+  margin: 10px;
+}
+
 #webframe {
   position: absolute;
-  border: 1px solid red;
   top: 0;
   left: 0;
   width: 100%;
   z-index: -1;
+  background-color: gray;
+  color: white;
 }
 
 #webframeBackButton {
@@ -40,6 +63,9 @@ img {
   line-height: 40px;
   border-radius: 50%;
   z-index: 1;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
 }
 
 #promotionInfo {

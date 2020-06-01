@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
@@ -12,7 +12,7 @@
   </head>
   <body>
     <h1>PWA Project TEST</h1>
-    <h2>我要測試彈窗功能 v1-1</h2>
+    <h2>我要測試PWA 安裝偵測 v1</h2>
     <h2 id="jstext"></h2>
     <div>
       <h1 id="pwadetect"></h1>
@@ -22,20 +22,29 @@
         <span>Install Me!! PWA!!</span>
       </div>
       <button>
-        <a href="https://www.google.com/" target="_blank" rel="noopener">Google</a>
+        <a href="https://www.google.com/" target="_blank" rel="noopener">Pure Link Google</a>
       </button>
       <button>
-        <span onclick="location.href = 'https://www.google.com/'">Google</span>
+        <span onclick="location.href = 'https://www.google.com/'">location.href = Google</span>
       </button>
       <button>
-        <span onclick="window.open('https://www.google.com/')">Google</span>
+        <span onclick="window.open('https://www.google.com/')">Window.open Google</span>
       </button>
       <button>
         <span onclick="showiframe()">Game Launch iframe</span>
       </button>
+      <button>
+        <span onclick="showiframeWithFull()">Game Launch iframe Fullscreen</span>
+      </button>
       <div id="lunchGameWrapper">
-        <div id="webframeBackButton" onclick="hideiframe()"> << </div>
-        <iframe src="" frameborder="1" id="webframe"></iframe>
+        <h2>Game Mode</h2>
+        <div id="webframeBackButton" onclick="backBtnTrigger()"> << </div>
+        <div id="confirmDialog">
+          <h4>Are you sure to exit?</h4>
+          <button onclick="quityes()">YES</button>
+          <button onclick="quitno()">NO</button>
+        </div>
+        <iframe src="" frameborder="0" id="webframe"></iframe>
       </div>
       <div>
         <img src="/images/uf6ej9452l.jpg" alt="奇怪的知識增加了">
@@ -45,9 +54,6 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
-    <script>
-      var vConsole = new VConsole();
-    </script>
     <script src="/main.js"></script>
     <script>
       window.addEventListener('load', async () => {
