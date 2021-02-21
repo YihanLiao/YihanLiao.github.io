@@ -1,71 +1,22 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="/images/appicon/app_icon.png">
-    <link rel="stylesheet" href="style.css">
-    <meta name="theme-color" content="#2196f3"/>
-    <meta name="apple-mobile-web-app-status-bar" content="#2196f3">
-    <title>Pwa Project</title>
-  </head>
-  <body>
-    <h1>PWA Project TEST</h1>
-    <h2>我要測試PWA 安裝偵測 v1</h2>
-    <h2 id="jstext"></h2>
-    <div>
-      <h1 id="pwadetect"></h1>
-      <h1 id="orientationdetect"></h1>
-      <div id="promotionInfo">
-        <h2>Promotion</h2>
-        <span>Install Me!! PWA!!</span>
-      </div>
-      <button>
-        <a href="https://www.google.com/" target="_blank" rel="noopener">Pure Link Google</a>
-      </button>
-      <button>
-        <span onclick="location.href = 'https://www.google.com/'">location.href = Google</span>
-      </button>
-      <button>
-        <span onclick="window.open('https://www.google.com/')">Window.open Google</span>
-      </button>
-      <button>
-        <span onclick="showiframe()">Game Launch iframe</span>
-      </button>
-      <button>
-        <span onclick="showiframeWithFull()">Game Launch iframe Fullscreen</span>
-      </button>
-      <div id="lunchGameWrapper">
-        <h2>Game Mode</h2>
-        <div id="webframeBackButton" onclick="backBtnTrigger()"> << </div>
-        <div id="confirmDialog">
-          <h4>Are you sure to exit?</h4>
-          <button onclick="quityes()">YES</button>
-          <button onclick="quitno()">NO</button>
-        </div>
-        <iframe src="" frameborder="0" id="webframe"></iframe>
-      </div>
-      <div>
-        <img src="/images/uf6ej9452l.jpg" alt="奇怪的知識增加了">
-      </div>
-      <div>
-        <img src="/images/g3sj61uee.gif" alt="420">
-      </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
-    <script src="/main.js"></script>
-    <script>
-      window.addEventListener('load', async () => {
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/service-worker.js')
-          .then(function(registration) {
-            registration.update();
-          }).catch(function(error) {
-            console.error('Registration failed with ' + error);
-          });
-        }
-      });
-    </script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #userAgent-print-area {
+      color: lightseagreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>userAgent detective.</h1>
+  <p id="userAgent-print-area"></p>
+  <script>
+    let userAgent = navigator.userAgent;
+    document.getElementById('userAgent-print-area').innerHTML = userAgent;
+  </script>
+</body>
 </html>
