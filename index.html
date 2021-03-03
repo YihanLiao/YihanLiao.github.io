@@ -9,14 +9,45 @@
     #userAgent-print-area {
       color: lightseagreen;
     }
+    .btn {
+      padding: 0 10px;
+      line-height: 50px;
+    }
   </style>
 </head>
 <body>
   <h1>userAgent detective.</h1>
   <p id="userAgent-print-area"></p>
+  <button class="btn" onclick="loadSource()">LoadTawk.to</button>
+  <button class="btn" onclick="btnToggle()">Toggle</button>
   <script>
     let userAgent = navigator.userAgent;
     document.getElementById('userAgent-print-area').innerHTML = userAgent;
   </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    window.forceOpen = () => {}
+    window.loadSource = function() {
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/603de35b1c1c2a130d63dfc6/1evos086m';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s1.onload = forceOpen;
+      s0.parentNode.insertBefore(s1,s0);
+    };
+
+    window.btnToggle = () => {
+      if(!Tawk_API) return;
+      if (Tawk_API.isChatHidden()) {
+        Tawk_API.showWidget();
+        Tawk_API.maximize();
+      } else {
+        Tawk_API.hideWidget();
+      }
+    }
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 </html>
