@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    #userAgent-print-area {
+    #userAgent-print-area,
+    #line-user-id {
       color: lightseagreen;
     }
     .btn {
@@ -18,6 +19,7 @@
 <body>
   <h1>userAgent detective.</h1>
   <p id="userAgent-print-area"></p>
+  <p id="line-user-id"></p>
   <button class="btn" onclick="loadSource()">LoadTawk.to</button>
   <button class="btn" onclick="btnToggle()">Toggle</button>
   <script src='https://static.line-scdn.net/liff/edge/2/sdk.js'></script>
@@ -50,10 +52,16 @@
       let AppUrlScheme = `ocms-${appName}://index` // ocms-tc://index
       liff.init({ liffId })
       .then(() => {
-        window.liff.openWindow({ url: AppUrlScheme, external: true });
-        window.liff.closeWindow();
+        // window.liff.openWindow({ url: AppUrlScheme, external: true });
+        // window.liff.closeWindow();
+
+        if (window.liff.isLoggedIn()) {
+          const context = window.liff.getContext();
+          document.getElementById('line-user-id').innerHTML = context.userId;
+        }
       })
     }
+
   </script>
 </body>
 </html>
