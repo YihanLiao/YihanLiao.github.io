@@ -20,7 +20,8 @@
   <h1>userAgent detective.</h1>
   <p id="userAgent-print-area"></p>
   <p id="line-user-id"></p>
-  <button class="btn" onclick="loadSource()">LoadTawk.to</button>
+  <p id="jivo-api-loading"></p>
+  <button class="btn" onclick="loadSource()">Jivo</button>
   <button class="btn" onclick="btnToggle()">Toggle</button>
   <script src='https://static.line-scdn.net/liff/edge/2/sdk.js'></script>
   <script>
@@ -60,6 +61,28 @@
           document.getElementById('line-user-id').innerHTML = context.userId;
         }
       })
+    }
+    const loadSource = () => {
+
+      const jivoShow = () => {
+        document.getElementById('jivo-api-loading').innerHTML = 'jivo 讀取中';
+        if (window.jivo_api) {
+          setTimeout(() => {
+            document.getElementById('jivo-api-loading').innerHTML = 'jivo 讀取完成';
+          }, 1000);
+          return;
+        }
+        setTimeout(jivoShow, 500);
+      }
+
+      let s1 = document.createElement("script");
+      let s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://code-eu1.jivosite.com/widget/Xwx2zYIWQv';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s1.onload = jivoShow;
+      s0.parentNode.insertBefore(s1,s0);
     }
 
   </script>
