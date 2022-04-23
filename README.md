@@ -10,7 +10,7 @@
 ## 簡歷
 | 期間               | 單位     | Title   |
 |-------------------|----------|---------|
-| 2017.03 - Present | [嘉碼科技公司](https://www.gamasys.com.tw/)| 軟體工程師 |
+| 2017.03 - Present | [嘉碼科技公司 / 九七科技公司](https://www.gamasys.com.tw/)| 軟體工程師 |
 | 2015.07 - 2017.03 | [一零四資訊科技股份有限公司](https://www.104.com.tw/)| 前端工程師 |
 | 2014.08 - 2015.07 | [就肆電競股份有限公司](https://www.4gamers.com.tw/) | 前端工程師 |
 | 2012.09 - 2014.08 | [國立中正大學](https://www.ccu.edu.tw/) 會計與資訊科技 | 碩士 |
@@ -31,29 +31,21 @@
 
 ## 歷任工作介紹
 
-### [ 嘉碼科技 ] 現金網 / 管理介面
-
-#### 簡介：
-
-Tune cross browser issue basically. Using Vue ecosystem to build client side application, apply NodeJs build server side service and cron job application.
+### [ 嘉碼科技 / 九七科技 ] 現金網 / 管理介面
 
 #### 職責：
 
 1.維護Server Side Application (example: 各功能CRUD或是類似功能) 並產出 Restful API；接續上述任務，利用Swagger撰寫相關API文件與Mocha撰寫Unit Test<br>
 
-2.撰寫Cron產出紀錄與報表，並撰寫管理頁面<br>
-
-3.撰寫Client Side程式，利用 Vue 生態系工具，發送Request 資料流處理
+2.撰寫Client Side程式，利用 Vue 生態系工具，發送Request 資料流處理
 
 #### 貢獻：
 
-1.利用上間公司的經驗導入Webpack作為瀏覽器端AMD與程式碼打包工具也撰寫Configuration改良開發模式利用Webpack的dev&hot middleware減少程式碼打包步驟與時間同時導入Js ES6撰寫風格利用Babel做程式碼預處理；整合SCSS Compile進Webpack 讓設計師撰寫CSS時更有效率
+1.利用改功能的機會重構語義不清的函式與導入ES6 ＆ 7的撰寫並將可共用的部份模組化並撰寫Comment 或是另外寫 Markdown讓後續維護方便些
 
-2.改良Swagger撰寫方式，導入doc generator此類工具縮短撰寫文件時間與讓串接方可以直接使用網頁做Request測試
+2.導入自動化撰寫框架，與測試工程師共同撰寫測試程式
 
-3.利用改功能的機會重構語義不清的函式與導入ES6 ＆ 7的撰寫並將可共用的部份模組化並撰寫Comment 或是另外寫 Markdown讓後續維護方便些
-
-4.導入自動化撰寫框架，與測試工程師共同撰寫測試程式
+3.利用工作之餘的剩餘時間，拿掉不必要的3rd plugin 持續輕量化網頁程式
 
 ### [ 一零四資訊科技 ] [104職涯社群更版](http://plus.104.com.tw)
 
