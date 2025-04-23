@@ -10,7 +10,8 @@
 ## 簡歷
 | 期間               | 單位     | Title   |
 |-------------------|----------|---------|
-| 2017.03 - Present | [嘉碼科技公司 / 九七科技公司](https://www.gamasys.com.tw/)| 軟體工程師 |
+| 2022.09 - Present | [IBM](https://www.104.com.tw/company/5h3lyhs?jobsource=google)| 軟體工程師 |
+| 2017.03 - 2022.06 | [嘉碼科技公司 / 九七科技公司](https://www.gamasys.com.tw/)| 軟體工程師 |
 | 2015.07 - 2017.03 | [一零四資訊科技股份有限公司](https://www.104.com.tw/)| 前端工程師 |
 | 2014.08 - 2015.07 | [就肆電競股份有限公司](https://www.4gamers.com.tw/) | 前端工程師 |
 | 2012.09 - 2014.08 | [國立中正大學](https://www.ccu.edu.tw/) 會計與資訊科技 | 碩士 |
@@ -21,7 +22,7 @@
 ## 技能
 * HTML
 * CSS > SCSS、PostCSS、RWD
-* Javascript > Vue (vue ecosystem)
+* Javascript > Vue (vue ecosystem), React (react ecosystem)
 * nodeJs > Express
 * Webpack
 * Git
@@ -30,6 +31,12 @@
 -----
 
 ## 歷任工作介紹
+
+### [IBM] 銀行系統 / APP 開發
+1.開發企業內部系統前端 撰寫Vue, React 元件 與 功能畫面前端<br>
+參與專案：元大B2E 彰銀EAI 台銀貸款網
+2.協同開發網路銀行APP 撰寫webview前端元件 & 商業邏輯
+參與專案：中信iPayment 元大行動精靈 彰銀新版APP
 
 ### [ 嘉碼科技 / 九七科技 ] 現金網 / 管理介面
 
