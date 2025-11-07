@@ -10,7 +10,7 @@
 ## 簡歷
 | 期間               | 單位     | Title   |
 |-------------------|----------|---------|
-| 2022.09 - Present | [IBM](https://www.104.com.tw/company/5h3lyhs?jobsource=google)| 軟體工程師 |
+| 2022.09 - 2025.07 | [IBM](https://www.104.com.tw/company/5h3lyhs?jobsource=google)| 軟體工程師 |
 | 2017.03 - 2022.06 | [嘉碼科技公司 / 九七科技公司](https://www.gamasys.com.tw/)| 軟體工程師 |
 | 2015.07 - 2017.03 | [一零四資訊科技股份有限公司](https://www.104.com.tw/)| 前端工程師 |
 | 2014.08 - 2015.07 | [就肆電競股份有限公司](https://www.4gamers.com.tw/) | 前端工程師 |
